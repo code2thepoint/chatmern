@@ -1,0 +1,514 @@
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+main {
+  display: block;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+a {
+  background-color: initial;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+code {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+img {
+  border-style: none;
+}
+button,
+input,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button,
+input {
+  overflow: visible;
+}
+
+
+
+template {
+  display: none;
+}
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+h1,
+h2,
+p {
+  margin: 0;
+}
+button {
+  background: transparent;
+  padding: 0;
+}
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+ul {
+  margin: 0;
+}
+*,
+:after,
+:before {
+  border: 0 solid #dae1e7;
+}
+img {
+  border-style: solid;
+}
+textarea {
+  resize: vertical;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+input::placeholder,
+textarea::placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+[role='button'],
+button {
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-grey-dark {
+  color: #8795a1;
+}
+.text-white {
+  color: #fff;
+}
+.text-red-dark {
+  color: #cc1f1a;
+}
+.text-sm {
+  font-size: 0.875rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+}
+.text-2xl {
+  font-size: 1.5rem;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.no-underline {
+  text-decoration: none;
+}
+.z-50 {
+  z-index: 50;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  background-color: #f8fafc;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
+}
+#root {
+  min-height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+.chevron {
+  border-color: transparent transparent #fff;
+  border-style: solid;
+  border-width: 0 10px 10px;
+  height: 0;
+  top: -11px;
+  right: 0;
+  width: 0;
+  z-index: 12;
+  content: ' ';
+  position: absolute;
+}
+.notifications li:last-child {
+  border: none;
+}
+.Loading {
+  margin: 0 auto;
+  width: 70px;
+  text-align: center;
+}
+.Loading > div {
+  width: 18px;
+  height: 18px;
+  background-color: #333;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s ease-in-out infinite both;
+  animation: sk-bouncedelay 1.4s ease-in-out infinite both;
+}
+.Loading .Loading__dot-1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.Loading .Loading__dot-2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+@-webkit-keyframes sk-bouncedelay {
+  0%,
+  80%,
+  to {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes sk-bouncedelay {
+  0%,
+  80%,
+  to {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.Main {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.Main--center {
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.Signup {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.Signup__img {
+  height: 70vh;
+  min-width: 450px;
+  object-fit: contain;
+  display: none;
+}
+@media (min-width: 768px) {
+  .Signup__img {
+    display: block;
+  }
+}
+.FormContainer {
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border-width: 1px;
+  border-color: #dae1e7;
+  padding: 4rem 2rem;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.Form__titulo {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.Form__field {
+  font-size: 0.875rem;
+  background-color: #f8fafc;
+  border-color: #dae1e7;
+  border-width: 1px;
+  border-radius: 0.125rem;
+  padding: 0.5rem 0.25rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.Form__submit {
+  display: block;
+  color: #fff;
+  background-color: #3490dc;
+  text-align: center;
+  border-radius: 0.25rem;
+  margin: 0.5rem auto 1rem;
+  padding: 0.5rem 1rem;
+}
+.FormContainer__info {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #8795a1;
+  font-weight: 500;
+}
+
+
+
+
+.Nav {
+  border-bottom-width: 1px;
+  border-color: #dae1e7;
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  height: 4rem;
+  z-index: 1;
+}
+.Nav__links {
+  height: 100%;
+  list-style: none;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.25rem;
+  padding: 0 0.75rem;
+}
+.Nav__link {
+  text-decoration: none;
+  color: #22292f;
+}
+.Nav__link-push {
+  margin-left: auto;
+}
+.Nav__link-margin-left {
+  padding-left: 0.75rem;
+}
+
+
+
+
+.Avatar {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  border-bottom-width: 1px;
+  border-color: #dae1e7;
+  padding: 1rem;
+}
+.Avatar a {
+  color: inherit;
+  text-decoration: none;
+}
+.Avatar h2 {
+  font-size: 0.875rem;
+  padding-left: 0.5rem;
+}
+.Avatar__img {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-position: 50%;
+  border-radius: 9999px;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .UserListScreen {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+ .UserListScreen h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+ .UserList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ .UserList li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+ .UserList__Link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #3490dc;
+}
+
+ .UserList li:hover {
+  background-color: #eef;
+}
+
+ .UserList__Link:hover {
+  color: #2a7abf;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Contenedor del chat */
+.ChatScreen {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+}
+
+/* Cabecera del chat */
+.ChatScreen__Header {
+  padding: 10px;
+  background-color: #3490dc;
+  color: white;
+  text-align: center;
+}
+
+/* Contenedor de los mensajes */
+.ChatScreen__Messages {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto; /* Activa el scroll vertical */
+  max-height: 400px; /* Tamaño fijo para el área de mensajes */
+}
+
+/* Estilo base para los mensajes */
+.Message {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+  max-width: 80%;
+  word-wrap: break-word;
+  display: flex;
+  align-items: center;
+}
+
+/* Mensajes enviados */
+.Message.sent {
+  background-color: #3490dc;
+  color: white;
+  align-self: flex-end;
+  text-align: right;
+}
+
+/* Mensajes recibidos */
+.Message.received {
+  background-color: #e5e5ea;
+  color: black;
+  align-self: flex-start;
+  text-align: left;
+}
+
+/* Contenedor del campo de entrada */
+.ChatScreen__Input {
+  display: flex;
+  padding: 10px;
+  background-color: white;
+  border-top: 1px solid #ddd;
+}
+
+.ChatScreen__Input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.ChatScreen__Input button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #3490dc;
+  color: white;
+  cursor: pointer;
+}
